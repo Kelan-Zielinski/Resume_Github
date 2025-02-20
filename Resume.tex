@@ -1,0 +1,232 @@
+%-------------------------
+% Resume in Latex
+% Author : Gabriel Sison
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Random Stuff %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[letterpaper,11pt]{article}
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage{latexsym}
+\usepackage{hyphenat}
+\usepackage{fontawesome}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.6in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1.19in}
+\addtolength{\topmargin}{-.7in}
+\addtolength{\textheight}{1.4in}
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-10pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{0pt}]
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Commands  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-3pt}}
+  }
+}
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubheadingContinue}[2]{
+  \vspace{-3pt}
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeProjectHeading}[2]{
+  \vspace{-3pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{0pt}}
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{0pt}}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Heading  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\begin{document}
+    \begin{center}
+      \textbf{\Huge \scshape Kelan S. Zielinski} \\ \vspace{2pt}
+      \small
+      \faMobile \hspace{.3pt} \href{tel:2163170313}{2163170313}
+      $|$
+      \faAt \hspace{.3pt} \href{mailto:kelanzielinski@gmail.com}{kelanzielinski@gmail.com}
+      $|$
+      \faLinkedinSquare \hspace{.3pt} \href{https://www.linkedin.com/in/kelan-zielinski-660294221/}{www.linkedin.com/in/kelanzielinski/}
+      $|$
+      \faFolder \hspace{.3pt} \href{https://bit.ly/kelanzielinski}{bit.ly/kelanzielinski}
+    \end{center}
+
+  %%%%%%%%%%%%%%%%%%%%%%%%%%%%  Experience  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Work \& Leadership Experience}
+\resumeSubHeadingListStart
+    % COMPANY 3
+    \resumeSubheading
+    {Motorola Solutions Inc.}{Plantation, Fl}
+          % POSITION 1
+          {Electrical Engineering Intern}{May 2024 - August 2024}
+          \resumeItemListStart
+              \resumeItem{Collaborated with RF engineers to analyze and adjust circuit parameters, successfully achieving optimal network impedance using a Smith chart.}
+                \resumeItem{Implemented automated tests in LabVIEW to verify network matching, comparing RSSI values to predetermined benchmarks, ensuring signal integrity.}
+                 \resumeItem{Validated scattering (S2P) parameters on a Vector Network Analyzer (VNA) and redesigned the network on Advanced Design System (ADS) software.}
+                  \resumeItem{Performed root cause analysis using an oscilloscope to identify timing issues that resulted in unexpected power cycles between a radio and an uninterruptible power supply (UPS).}
+          \resumeItemListEnd
+
+    % COMPANY 2
+     \resumeSubheading
+     {IoT-Driven Crop Production System}{Coral Gables Fl}
+         % POSITION 1
+         {Hardware Engineering Intern - University of Miami}{January 2023 - May 2024}
+         \resumeItemListStart
+             \resumeItem{Designed and built an IoT-controlled hydroponics system to cultivate 2000+ plants per year within a footprint of less than 50 square feet.}
+             \resumeItem{Developed a hardware prototype and validated components, including I2C and UART sensors and actuators, based on system requirements.}
+             \resumeItem{Utilized an EDA simulation platform to model and optimize system circuitry for improved performance and reliability.}
+         \resumeItemListEnd
+     % COMPANY 3
+     \resumeSubheading
+     {University Of Miami -- Design For Testability Laboratory}{Coral Gables, Fl}
+         % POSITION 1
+         {Teaching Assistant}{January 2024 - May 2024}
+         \resumeItemListStart
+            \resumeItem{Aided students in designing and implementing a digital signal processor in VHDL.}
+             \resumeItem{Provided assistance with debugging timing issues in a large system.}
+         \resumeItemListEnd
+
+    % COMPANY 1
+    \resumeSubheading
+    {HKN Honor Society (IEEE) -- University of Miami Chapter}{Coral Gables, Fl}
+        % POSITION 1
+        {Eta Kappa Nu -- Honor Society Member}{February 2024 - Present}
+        \resumeItemListStart
+            \resumeItem{Supported students in mastering fundamental engineering concepts.}
+            \resumeItem{Provided programming suggestions for HDL and C++ based projects.}
+        \resumeItemListEnd
+        
+\resumeSubHeadingListEnd
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  PROJECTS  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Projects} 
+
+    \resumeSubHeadingListStart
+
+    \resumeProjectHeading
+    {FPGA-Based Quantum Emulator -- VHDL, Python, ModelSim}
+    % Date
+    {May 2025}
+    \resumeItemListStart
+        \resumeItem{Designed and implemented a quantum system emulator on an FPGA using VHDL, modeling the time evolution of qubits based on their Hamiltonian.}
+        \resumeItem{Optimized FPGA resource utilization for efficient matrix exponentiation and state vector updates to mimic quantum dynamics.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {Advanced Digital Signal Processor -- VHDL, ModelSim}
+    % Date
+    {April 2024}
+    \resumeItemListStart
+        \resumeItem{Implemented the ADSP-2100 digital signal processor to perform specific computations based on the instruction.}
+        \resumeItem{Integrated Built-In-Self-Test (BIST) architecture to generate signatures and expose faults within the system design.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {MIPS RISC CPU  -- VHDL, ModelSim, Quartus Prime}
+    {October 2024}
+    \resumeItemListStart
+        \resumeItem{Programmed, simulated, and implemented a 32-bit RISC processor.}
+        %\resumeItem{Implemented forecasting methods and created visualizations to identify trends.}
+        %\resumeItem{Evaluated forecasting accuracy through Mean Squared Error (MSE) calculations to determine the most effective model.}
+    \resumeItemListEnd
+
+    \resumeProjectHeading
+    {Rotor-based Encryption Machine -- Verilog, ModelSim, Quartus Prime}
+    % Date
+    {November 2023}
+    \resumeItemListStart
+        \resumeItem{Developed a Verilog-based model of the Enigma M3, featuring three dynamic rotors with rotational functionality and a reflector component.}
+        \resumeItem{Verified data transfer and timing aspects of system design using RTL viewer and waveforms.}
+        \resumeItemListEnd
+
+    %\resumeProjectHeading
+    %{Signal Filtering Simulator -- Python, PyQT}
+    % Date
+    %{October 2024}
+    %\resumeItemListStart
+    %    \resumeItem{Developed a dynamic signal filtering application that allows users to apply and visualize filters on generated signals in the frequency and time domain.}
+        %\resumeItem{These filters can be visualized in the time and frequency domain.}
+        %\resumeItem{Implemented various registers for the storage of essential information, such as the current time and alarm time. }
+    %\resumeItemListEnd
+
+    \resumeSubHeadingListEnd
+ 
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Technical Skills  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Technical Skills}
+
+    \vspace{-7pt}
+    \begin{itemize}
+    [leftmargin=0.15in, label={}]\small{\item{
+        % Tech. Skills
+        \textbf{Technical Skills}{: VHDL, Verilog, C++, C, Python, ARM Assembly, Soldering, PCB Design \& Testing} \\
+        % TOOLS
+        \textbf{Developer Tools}{: ModelSim, ADS, Cadence, PSpice, MATLAB, Intel Quartus Prime, KiCad, Unix, LabVIEW, AutoCAD} \\
+        % Test Equipment
+        \textbf{Test Equipment}{: Oscilloscopes, Spectrum Analyzers, Logic Analyzers, Network Analyzers, Multimeters, Signal Generators} \\
+        % Interests
+        %\textbf{Interests}{: Computer Hardware, Hardware Validation, Hardware Design, Semiconductors, Water Sports} \\
+        }}
+\    \end{itemize}
+    
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Education  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Education}
+  \resumeSubHeadingListStart
+  
+    % MAIN INFORMATION
+    \resumeSubheading
+    {University of Miami}{Coral Gables, Fl}
+    {Bachelor of Science in Electrical Engineering -- GPA: 3.72}{May 2025} 
+        % BULLET POINTS
+        \resumeItemListStart
+            \resumeItem{\textbf{Relevant Coursework:} Digital System Design \& Testing, Discrete Time Signals \& Systems, Computer Organization \& Design, Circuits Signals \& Systems, Design for Testability(DFT) Laboratory, Electronics, Logic Design, Structured Digital Design, Electromagnetic Field Theory, Data Structures}
+        \resumeItemListEnd
+        
+  \resumeSubHeadingListEnd
+
+\end{document}
